@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Colors ─────────────────────────────────────────────── */
+  --color-ink: #0a0a0b;
+  --color-ink-soft: #131215;
+  --color-surface: #18171b;
+  --color-surface-hi: #211f24;
+  --color-bone: #eeeae1;
+  --color-bone-dim: #c9c4b8;
+  --color-gold: #c6a15b;
+  --color-gold-hi: #dcb96f;
+  --color-red: #8e2430;
+  --color-red-hi: #b4323f;
+
+  /* ── Fonts ───────────────────────────────────────────────── */
+  --font-display: "Oswald", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  /* ── Belt stripe rank sequence ───────────────────────────── */
+  --color-belt-white: #eeeae1;
+  --color-belt-yellow: #d8b23f;
+  --color-belt-orange: #c9702f;
+  --color-belt-green: #4c7a4a;
+  --color-belt-blue: #2f5f8a;
+  --color-belt-brown: #6b4a30;
+  --color-belt-black: #0a0a0b;
+}
+
+/* ── Base ────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Prevents layout shift from scrollbar appearing/disappearing */
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-bone);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Slightly better text rendering on retina screens */
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Respect reduced motion globally */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Remove default focus for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Skip-to-main link — only visible on keyboard focus */
+  .skip-to-main {
+    position: fixed;
+    top: -100%;
+    left: 1rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: var(--color-gold);
+    color: var(--color-ink);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
+    transition: top 0.2s ease;
+    text-decoration: none;
+  }
+
+  .skip-to-main:focus-visible {
+    top: 0;
+    outline: none;
+  }
+}
+
+/* ── Utilities ───────────────────────────────────────────────── */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Outlined stroke text effect used on hero headline and watermarks */
+  .text-stroke-gold {
+    -webkit-text-stroke: 1.5px var(--color-gold);
+    color: transparent;
+  }
+
+  /* Belt rank progression stripe — the site's signature visual motif */
+  .belt-stripe {
+    background: linear-gradient(
+      90deg,
+      var(--color-belt-white)  0%,
+      var(--color-belt-white)  14.28%,
+      var(--color-belt-yellow) 14.28%,
+      var(--color-belt-yellow) 28.56%,
+      var(--color-belt-orange) 28.56%,
+      var(--color-belt-orange) 42.84%,
+      var(--color-belt-green)  42.84%,
+      var(--color-belt-green)  57.12%,
+      var(--color-belt-blue)   57.12%,
+      var(--color-belt-blue)   71.4%,
+      var(--color-belt-brown)  71.4%,
+      var(--color-belt-brown)  85.68%,
+      var(--color-belt-black)  85.68%,
+      var(--color-belt-black)  100%
+    );
+  }
+
+  /* Subtle film-grain noise overlay for dark sections */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  /* Bottom fade mask for image/section transitions */
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  /* Performance hint for elements animated via framer-motion transforms */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* Horizontal scroll snap for mobile timetable */
+  .snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+
+  /* Gold glow ring for interactive card hover states */
+  .ring-gold-glow {
+    box-shadow: 0 0 0 1px rgba(198, 161, 91, 0);
+    transition: box-shadow 0.3s ease;
+  }
+  .ring-gold-glow:hover {
+    box-shadow: 0 0 0 1px rgba(198, 161, 91, 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Elevated shadow for dark-surface cards on hover */
+  .card-shadow-dark {
+    transition: box-shadow 0.3s ease, transform 0.25s ease;
+  }
+  .card-shadow-dark:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(198, 161, 91, 0.15);
+  }
+
+  /* Elevated shadow for light-surface cards on hover */
+  .card-shadow-light {
+    transition: box-shadow 0.3s ease, transform 0.25s ease;
+  }
+  .card-shadow-light:hover {
+    box-shadow: 0 12px 36px rgba(10, 10, 11, 0.14);
+  }
+}
