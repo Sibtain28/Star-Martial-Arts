@@ -10,8 +10,8 @@ export default function ProgramsGrid() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
           eyebrow="Our Programs"
-          title="FIVE DISCIPLINES, ONE DOJO"
-          description="Every program is taught by certified instructors and built on the same foundation of discipline, technique and respect."
+          title="14 DISCIPLINES, ONE DOJO"
+          description="Every program is taught by certified instructors focused on technical fundamentals."
           light
           align="center"
         />

@@ -1,10 +1,5 @@
-import { Swords, HandFist, Flame, Dumbbell, Baby } from "lucide-react";
+import { Swords, HandFist, Flame, Dumbbell, Baby, Shield, Target, Heart, User, Trophy, Activity } from "lucide-react";
 
-/**
- * Difficulty is expressed on the club's own belt scale rather than a
- * generic "easy/medium/hard" label — it's the same rank language used
- * throughout the site (see BeltStripe / SectionHeading).
- */
 export const DIFFICULTY = {
   beginner: { label: "Beginner Friendly", belt: "var(--color-belt-white)", dot: "border-ink/20" },
   intermediate: { label: "Intermediate", belt: "var(--color-belt-orange)", dot: "border-transparent" },
@@ -20,8 +15,7 @@ export const PROGRAMS = [
     icon: Swords,
     difficulty: "advanced",
     duration: "90 min",
-    description:
-      "Strike, clinch and grapple in one system. Our MMA program blends boxing, Muay Thai and BJJ into complete, fight-tested skill.",
+    description: "Our MMA program combines boxing, Muay Thai, and BJJ into a complete combat system.",
     accent: "from-red/25 via-ink to-ink",
   },
   {
@@ -31,8 +25,7 @@ export const PROGRAMS = [
     icon: HandFist,
     difficulty: "all",
     duration: "60 min",
-    description:
-      "Footwork, head movement and hand speed built the old-fashioned way &mdash; on pads, on the bag, and in controlled sparring.",
+    description: "Learn proper footwork, head movement, and punching technique through pad work and sparring.",
     accent: "from-gold/20 via-ink to-ink",
   },
   {
@@ -42,9 +35,98 @@ export const PROGRAMS = [
     icon: Flame,
     difficulty: "intermediate",
     duration: "60 min",
-    description:
-      "High-tempo striking rounds combining punches, kicks and knees for a full-body cardio burn and sharper reflexes.",
+    description: "A high-intensity striking workout combining punches, kicks, and knees for conditioning.",
     accent: "from-red/25 via-ink to-ink",
+  },
+  {
+    slug: "self-defence",
+    name: "Self Defence",
+    fullName: "Tactical Self Defence",
+    icon: Shield,
+    difficulty: "all",
+    duration: "60 min",
+    description: "Learn practical self-protection techniques and awareness strategies for real-world scenarios.",
+    accent: "from-gold/20 via-ink to-ink",
+  },
+  {
+    slug: "unarmed-combat",
+    name: "Unarmed Combat",
+    fullName: "Close Quarters Battle",
+    icon: Target,
+    difficulty: "advanced",
+    duration: "60 min",
+    description: "Military-grade hand-to-hand combat training focusing on rapid threat neutralisation.",
+    accent: "from-red/25 via-ink to-ink",
+  },
+  {
+    slug: "muay-boran",
+    name: "Muay Boran",
+    fullName: "Traditional Thai Martial Art",
+    icon: Swords,
+    difficulty: "intermediate",
+    duration: "75 min",
+    description: "Study the ancient, pre-modern precursor to Muay Thai featuring historic combat stances.",
+    accent: "from-gold/25 via-ink to-ink",
+  },
+  {
+    slug: "crossfit",
+    name: "CrossFit",
+    fullName: "Functional Fitness",
+    icon: Dumbbell,
+    difficulty: "all",
+    duration: "60 min",
+    description: "High-intensity functional conditioning designed to build maximum work capacity.",
+    accent: "from-red/15 via-ink to-ink",
+  },
+  {
+    slug: "weight-loss",
+    name: "Weight Loss",
+    fullName: "Fat Loss & Conditioning",
+    icon: Heart,
+    difficulty: "all",
+    duration: "60 min",
+    description: "Goal-oriented cardio circuits and metabolic conditioning to accelerate fat loss.",
+    accent: "from-gold/20 via-ink to-ink",
+  },
+  {
+    slug: "strength",
+    name: "Strength",
+    fullName: "Power & Hypertrophy",
+    icon: Dumbbell,
+    difficulty: "all",
+    duration: "60 min",
+    description: "Structured resistance training to build raw power, bone density, and lean muscle mass.",
+    accent: "from-red/20 via-ink to-ink",
+  },
+  {
+    slug: "personal-training",
+    name: "Personal Training",
+    fullName: "One-on-One Coaching",
+    icon: User,
+    difficulty: "all",
+    duration: "60 min",
+    description: "Customised workout plans and private instruction tailored to your specific fitness goals.",
+    accent: "from-gold/15 via-ink to-ink",
+  },
+  {
+    slug: "fight-prep",
+    name: "Cage Fighting",
+    fullName: "Professional Ring/Cage Prep",
+    icon: Trophy,
+    difficulty: "advanced",
+    duration: "90 min",
+    description: "Intense fighter camp preparation focusing on cage strategy, rules, and stamina.",
+    accent: "from-red/30 via-ink to-ink",
+  },
+  {
+    slug: "ju-jitsu",
+    name: "Ju-Jitsu",
+    fullName: "Grappling & Submissions",
+    icon: Activity,
+    difficulty: "beginner",
+    duration: "75 min",
+    description: "Focus on leverage and technique to control opponents on the mat and secure submissions.",
+    accent: "from-gold/15 via-ink to-ink",
   },
   {
     slug: "fitness",
@@ -53,8 +135,7 @@ export const PROGRAMS = [
     icon: Dumbbell,
     difficulty: "all",
     duration: "45 min",
-    description:
-      "Functional strength, mobility and conditioning circuits built to support every martial art we teach &mdash; and everyday life.",
+    description: "Build functional strength and conditioning to support your training and daily life.",
     accent: "from-red/15 via-ink to-ink",
   },
   {
@@ -64,8 +145,7 @@ export const PROGRAMS = [
     icon: Baby,
     difficulty: "beginner",
     duration: "45 min",
-    description:
-      "Discipline, focus and confidence taught through age-appropriate karate games, drills and belt milestones.",
+    description: "Build discipline and confidence through fun martial arts games and structured grading.",
     accent: "from-gold/20 via-ink to-ink",
   },
 ];

@@ -21,18 +21,7 @@ export default function ClubIntro() {
           />
           <div className="mt-6 max-w-xl space-y-4 text-[15px] leading-relaxed text-bone-dim">
             <p>
-              Star Martial Arts &amp; Fitness Club opened its doors in
-              Hyderabad in 1969, founded on a simple belief: that martial
-              arts should build character as surely as it builds strength.
-              What began as a single karate class has grown into one of the
-              city&rsquo;s most respected training grounds.
-            </p>
-            <p>
-              Today, three generations of instructors carry that founding
-              philosophy forward &mdash; blending traditional karate and
-              self-defense with modern strength and conditioning, so every
-              student trains with the discipline of the old dojo and the
-              science of the new gym.
+              Since 1969, we have helped students build character and strength through disciplined martial arts and fitness training.
             </p>
           </div>
 

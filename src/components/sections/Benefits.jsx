@@ -35,7 +35,7 @@ export default function Benefits() {
         <SectionHeading
           eyebrow="Benefits"
           title="MORE THAN A WORKOUT"
-          description="Martial arts training builds the body and the mind together — here's what students gain, on and off the mat."
+          description="Martial arts training builds both physical strength and mental discipline."
         />
 
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2">

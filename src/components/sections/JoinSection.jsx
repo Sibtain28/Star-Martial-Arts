@@ -11,7 +11,7 @@ export default function JoinSection() {
         <SectionHeading
           eyebrow="Registration"
           title="START YOUR FIRST CLASS, FREE"
-          description="Fill in your details below and our team will confirm your first free trial within 24 hours."
+          description="Sign up below to book your free trial session."
           light
           align="center"
         />

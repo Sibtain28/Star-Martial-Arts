@@ -7,32 +7,32 @@ const FEATURES = [
   {
     icon: ShieldCheck,
     title: "Certified Instructors",
-    desc: "Every coach is a certified black belt with years of teaching experience, not just competing experience.",
+    desc: "Every coach is a certified black belt with extensive teaching experience.",
   },
   {
     icon: Users,
     title: "Every Age Welcome",
-    desc: "Dedicated programs for kids, teens and adults mean every student trains at the right pace, together.",
+    desc: "We offer dedicated programs for kids, teens, and adults.",
   },
   {
     icon: Trophy,
     title: "Proven Competition Record",
-    desc: "Star students have represented Telangana at state and national karate championships for decades.",
+    desc: "Our students regularly compete at state and national levels.",
   },
   {
     icon: Clock,
     title: "Flexible Class Timings",
-    desc: "Morning, evening and weekend batches fit training around school, work and family life.",
+    desc: "Morning, evening, and weekend sessions fit any schedule.",
   },
   {
     icon: Dumbbell,
     title: "Modern Training Floor",
-    desc: "Traditional dojo etiquette meets a fully equipped fitness floor for strength and conditioning work.",
+    desc: "A traditional dojo meets a fully equipped strength facility.",
   },
   {
     icon: HeartPulse,
     title: "Whole-Person Coaching",
-    desc: "We track discipline, confidence and fitness milestones alongside belt grading — not just technique.",
+    desc: "We focus on character, discipline, and fitness alongside technique.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
         <SectionHeading
           eyebrow="Why Choose Us"
           title="TRAINING THAT EARNS ITS REPUTATION"
-          description="Fifty-six years in Hyderabad has taught us what actually builds strong, disciplined students — here's what sets Star apart."
+          description="Here is what sets Star Martial Arts apart."
         />
 
         <motion.div

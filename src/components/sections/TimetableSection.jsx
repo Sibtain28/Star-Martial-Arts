@@ -16,7 +16,7 @@ export default function TimetableSection() {
         <SectionHeading
           eyebrow="Weekly Schedule"
           title="FIND YOUR CLASS, PICK YOUR TIME"
-          description="A full week of morning and evening sessions across every discipline. Filter by program to see where it fits your schedule."
+          description="Filter our weekly schedule by program to find the best slot."
           light
           align="center"
         />

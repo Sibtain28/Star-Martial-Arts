@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
         <SectionHeading
           eyebrow="Testimonials"
           title="WHAT OUR STUDENTS SAY"
-          description="Real members, real progress &mdash; here's how training at Star has changed things on and off the mat."
+          description="Read feedback from our members about their training experience."
           light
           align="center"
         />

@@ -11,7 +11,7 @@ export default function TrainersGrid() {
         <SectionHeading
           eyebrow="Our Trainers"
           title="LEARN FROM THOSE WHO'VE DONE IT"
-          description="Every coach at Star holds a certified rank in their discipline &mdash; and years of experience teaching it, not just competing in it."
+          description="Our certified coaches bring years of professional experience to the mat."
           light
           align="center"
         />

@@ -1,12 +1,52 @@
 export const TRAINERS = [
   {
+    slug: "ms-jaweed",
+    name: "Grand Master MS Jaweed",
+    role: "Founder & Karate Grand Master",
+    discipline: "Karate",
+    rank: "Karate Grand Master",
+    experience: 55,
+    bio: "Founded the club in 1969 and has run the Hyderabad club for over 55 years.",
+    certifications: [
+      "Karate Grand Master",
+      "Founded Star Martial Arts in 1969",
+    ],
+    achievements: [
+      "55+ years on the mat",
+      "Trained generations of martial artists",
+    ],
+    accent: "from-gold/25 via-ink to-ink",
+    socials: {},
+  },
+  {
+    slug: "imaduddin-naveed",
+    name: "Mohammed Imaduddin Naveed",
+    role: "Managing Director & Head Coach",
+    discipline: "Muay Thai & Karate",
+    rank: "10th Degree Red Munkun",
+    experience: 25,
+    bio: "Asst. National Coach, General Secretary of TAMTA, and Managing Director of Star Martial Arts, trained 15,000+ disciples including celebrities, military, and police.",
+    certifications: [
+      "10th Degree Red Munkun in Muay Thai",
+      "2nd Dan Black Belt Karate",
+      "General Secretary of TAMTA",
+      "Asst. National Coach & International Athlete",
+    ],
+    achievements: [
+      "Won Bronze at 2007 Asian Indoor Games (China)",
+      "Trained 15,000+ disciples",
+    ],
+    accent: "from-red/25 via-ink to-ink",
+    socials: {},
+  },
+  {
     slug: "saqib-ali",
     name: "Mir Mohammed Saqib Ali",
     role: "Muay Thai Coach",
     discipline: "Muay Thai",
     rank: "Active Fighter",
     experience: 5,
-    bio: "Active Muay Thai fighter and coach focused on striking fundamentals, pad work, conditioning, and competition preparation.",
+    bio: "Active Muay Thai fighter focused on striking fundamentals and competition preparation.",
     certifications: [
       "Striking & Padding Specialist",
       "Combat Conditioning Instructor",
@@ -25,7 +65,7 @@ export const TRAINERS = [
     discipline: "Muay Thai, MMA",
     rank: "Competitive Athlete",
     experience: 6,
-    bio: "Athlete and coach from Hyderabad with competitive experience in Muay Thai and MMA, specializing in striking, conditioning, and fight preparation.",
+    bio: "Muay Thai and MMA coach specializing in striking and fight conditioning.",
     certifications: [
       "MMA Conditioning Specialist",
       "Striking & Fight Prep Coach",
@@ -44,7 +84,7 @@ export const TRAINERS = [
     discipline: "Muay Thai, MMA, S&C",
     rank: "Team India Athlete",
     experience: 8,
-    bio: "Competitive Muay Thai athlete and coach with experience preparing beginners and competitive fighters.",
+    bio: "Competitive Muay Thai athlete and coach preparing students for the mat.",
     certifications: [
       "IFMA Certified Muay Thai Coach",
     ],

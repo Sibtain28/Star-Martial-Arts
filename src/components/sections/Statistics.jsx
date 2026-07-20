@@ -4,10 +4,10 @@ import Counter from "../ui/Counter";
 import { useStagger } from "../../hooks/useStagger";
 
 const STATS = [
-  { icon: Medal, value: 56, suffix: "+", label: "Years of Legacy" },
-  { icon: Users, value: 800, suffix: "+", label: "Active Students" },
-  { icon: Award, value: 400, suffix: "+", label: "Black Belts Produced" },
-  { icon: Trophy, value: 120, suffix: "+", label: "Tournaments Won" },
+  { icon: Medal, value: 55, suffix: "+", label: "Years of Legacy" },
+  { icon: Users, value: 250, suffix: "K+", label: "Students Trained" },
+  { icon: Trophy, value: 500, suffix: "+", label: "Fighters per Event" },
+  { icon: Award, value: 5000, suffix: "+", label: "Spectators per Event" },
 ];
 
 export default function Statistics() {

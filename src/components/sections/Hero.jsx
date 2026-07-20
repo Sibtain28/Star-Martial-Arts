@@ -7,9 +7,9 @@ import { useParallax } from "../../hooks/useParallax";
 
 const STATS = [
   { label: "Established", display: "1969", isYear: true },
-  { label: "Students Trained", value: 12000, suffix: "+" },
-  { label: "Black Belts Certified", value: 400, suffix: "+" },
-  { label: "Weekly Classes", value: 60, suffix: "+" },
+  { label: "Students Trained", value: 250, suffix: "K+" },
+  { label: "Spectators per Event", value: 5000, suffix: "+" },
+  { label: "Fighters per Event", value: 500, suffix: "+" },
 ];
 
 const container = {
@@ -114,10 +114,7 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-[15px] leading-relaxed text-bone-dim sm:text-lg"
           >
-            Three generations of martial artists. One dojo. Star Martial Arts
-            &amp; Fitness Club has trained Hyderabad in karate, self-defense
-            and functional fitness since 1969 &mdash; built on tradition,
-            proven by results.
+            We have trained Hyderabad in karate, self-defense, and fitness since 1969.
           </motion.p>
 
           <motion.div

@@ -12,6 +12,7 @@ import TestimonialsSection from "../components/sections/TestimonialsSection";
 import ContactSection from "../components/sections/ContactSection";
 import JoinSection from "../components/sections/JoinSection";
 import CallToAction from "../components/sections/CallToAction";
+import Branches from "../components/sections/Branches";
 
 export default function LandingPage() {
   return (
@@ -49,6 +50,7 @@ export default function LandingPage() {
       </section>
 
       <section id="contact">
+        <Branches />
         <ContactSection />
       </section>
 

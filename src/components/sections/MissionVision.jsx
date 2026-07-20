@@ -9,14 +9,14 @@ const PANELS = [
     icon: Target,
     label: "Our Mission",
     heading: "FORGE STRENGTH THROUGH DISCIPLINE",
-    body: "To make authentic martial arts training accessible to every person in Hyderabad — building physical strength, mental focus and genuine self-defense ability inside a supportive, disciplined community.",
+    body: "To promote the Martial Arts and Fitness industries in India by providing a platform for athletes to showcase their skills, learn from the best, and grow into professional fighters — fostering discipline, fitness, and perseverance.",
     direction: -30,
   },
   {
     icon: Eye,
     label: "Our Vision",
     heading: "A CITY OF CONFIDENT, DISCIPLINED ATHLETES",
-    body: "To be recognised as Telangana's most trusted martial arts institution — producing champions in competition and, more importantly, disciplined, confident individuals in everyday life.",
+    body: "To ensure fair judgment and a transparent platform for all competitors, creating a competitive environment where talent is rewarded purely on merit.",
     direction: 30,
   },
 ];

@@ -6,8 +6,32 @@ import boxingImg from "../../assets/boxing.png";
 import kickboxingImg from "../../assets/kickboxing.jpg";
 import fitnessImg from "../../assets/fitness.png";
 import kidsImg from "../../assets/kids.png";
+import selfDefenceImg from "../../assets/self-defence.png";
+import unarmedCombatImg from "../../assets/unarmed-combat.png";
+import muayBoranImg from "../../assets/muay-boran.png";
+import crossfitImg from "../../assets/crossfit.png";
+import weightLossImg from "../../assets/weight-loss.png";
+import strengthImg from "../../assets/strength.png";
+import personalTrainingImg from "../../assets/personal-training.png";
+import fightPrepImg from "../../assets/fight-prep.png";
+import juJitsuImg from "../../assets/ju-jitsu.png";
 
-const PROGRAM_SLUGS = ["mma", "boxing", "kickboxing", "fitness", "kids"];
+const PROGRAM_SLUGS = [
+  "mma",
+  "boxing",
+  "kickboxing",
+  "self-defence",
+  "unarmed-combat",
+  "muay-boran",
+  "crossfit",
+  "weight-loss",
+  "strength",
+  "personal-training",
+  "fight-prep",
+  "ju-jitsu",
+  "fitness",
+  "kids",
+];
 
 const PROGRAM_IMAGES = {
   mma: mmaImg,
@@ -15,6 +39,15 @@ const PROGRAM_IMAGES = {
   kickboxing: kickboxingImg,
   fitness: fitnessImg,
   kids: kidsImg,
+  "self-defence": selfDefenceImg,
+  "unarmed-combat": unarmedCombatImg,
+  "muay-boran": muayBoranImg,
+  crossfit: crossfitImg,
+  "weight-loss": weightLossImg,
+  strength: strengthImg,
+  "personal-training": personalTrainingImg,
+  "fight-prep": fightPrepImg,
+  "ju-jitsu": juJitsuImg,
 };
 
 const PROGRAM_IMAGE_POSITIONS = {
@@ -23,6 +56,15 @@ const PROGRAM_IMAGE_POSITIONS = {
   kickboxing: "center 10%",
   fitness: "center 20%",
   kids: "center 20%",
+  "self-defence": "center 20%",
+  "unarmed-combat": "center 20%",
+  "muay-boran": "center 20%",
+  crossfit: "center 20%",
+  "weight-loss": "center 20%",
+  strength: "center 20%",
+  "personal-training": "center 20%",
+  "fight-prep": "center 20%",
+  "ju-jitsu": "center 20%",
 };
 
 export default function ProgramCard({ program, index = 0 }) {

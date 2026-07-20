@@ -12,7 +12,7 @@ export default function ContactSection() {
         <SectionHeading
           eyebrow="Get In Touch"
           title="QUESTIONS? LET'S TALK"
-          description="Whether you're booking a trial or just curious about a program, our front desk team replies within one business day."
+          description="Get in touch to book your trial or ask any questions."
           light
           align="center"
         />

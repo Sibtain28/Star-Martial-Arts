@@ -4,8 +4,12 @@ import SocialIcon from "../ui/SocialIcon";
 import trainer1Img from "../../assets/Trainer_1.jpg";
 import trainer2Img from "../../assets/Trainer_2.png";
 import trainer3Img from "../../assets/Trainer_3.png";
+import founderImg from "../../assets/founder.jpg";
+import directorImg from "../../assets/director.jpg";
 
 const TRAINER_IMAGES = {
+  "ms-jaweed": founderImg,
+  "imaduddin-naveed": directorImg,
   "saqib-ali": trainer1Img,
   "afroz-mohammed": trainer2Img,
   "ashwin-kumar": trainer3Img,

@@ -35,7 +35,7 @@ export default function GallerySection() {
         <SectionHeading
           eyebrow="Gallery"
           title="LIFE INSIDE THE DOJO"
-          description="Training sessions, tournaments, kids' gradings and club events &mdash; a look at what a week at Star actually looks like."
+          description="A look at training, tournaments, and life on the mat at our club."
           light
           align="center"
         />
